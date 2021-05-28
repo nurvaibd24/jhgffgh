@@ -17,10 +17,10 @@ touch /etc/openvpn/server2.conf
 username=`head -n1 $1 | tail -1`   
 password=`head -n2 $1 | tail -1`
 
-HOST='64.20.61.229'
-USER='vpnnetcl_vpnxd'
-PASS='iPU6Uj6Qx7FC'
-DB='vpnnetcl_vpnxd'
+HOST='66.29.132.15'
+USER='vpnneiqx_nurksa'
+PASS='84N{UYyV8.BZ'
+DB='vpnneiqx_nurksa'
 
 Query="SELECT user_name FROM users WHERE user_name='$username' AND user_encryptedPass=md5('$password') AND is_freeze='0' AND user_duration > 0"
 user_name=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
