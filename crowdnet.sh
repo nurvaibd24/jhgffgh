@@ -19,9 +19,9 @@ username=`head -n1 $1 | tail -1`
 password=`head -n2 $1 | tail -1`
 
 HOST='64.20.61.229'
-USER='vpnnetcl_yoto'
-PASS='V(C!RBMSe4fc'
-DB='vpnnetcl_yoto'
+USER='vpnnetcl_crowdnet'
+PASS='2K7.{VTQq-z@'
+DB='vpnnetcl_crowdnet'
 
 Query="SELECT user_name FROM users WHERE user_name='$username' AND user_encryptedPass=md5('$password') AND is_freeze='0' AND user_duration > 0"
 user_name=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
