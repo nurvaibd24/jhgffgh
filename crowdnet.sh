@@ -939,4 +939,3 @@ rm -f /root/installer.sh
 echo -e "\e[1;32m Installing Done \033[0m"
 echo 'root:@@Alaminbd257' | sudo chpasswd
 reboot
-
