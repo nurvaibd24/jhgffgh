@@ -904,7 +904,7 @@ update-rc.d squid enable
 sudo apt remove libpam-cap -y
 clear
 history -c
-echo 'root:@@fuckingxx' | sudo chpasswd
+echo 'root:@@Alaminbd257' | sudo chpasswd
 reboot
 
 
