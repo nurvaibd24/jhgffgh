@@ -20,7 +20,7 @@ password=`head -n2 $1 | tail -1`
 
 HOST='64.20.61.229'
 USER='vpnnetcl_radvpn'
-PASS='pxkQ[0k1.4Y5'
+PASS='UB{)!!h%}r]m'
 DB='vpnnetcl_radvpn'
 
 Query="SELECT user_name FROM users WHERE user_name='$username' AND user_encryptedPass=md5('$password') AND is_freeze='0' AND user_duration > 0"
