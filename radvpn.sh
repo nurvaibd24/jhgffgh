@@ -19,9 +19,9 @@ username=`head -n1 $1 | tail -1`
 password=`head -n2 $1 | tail -1`
 
 HOST='64.20.61.229'
-USER='vpnnetcl_radvpn'
-PASS='UB{)!!h%}r]m'
-DB='vpnnetcl_radvpn'
+USER='vpnnetcl_redvpn'
+PASS='X9ETS{%;Q8mm'
+DB='vpnnetcl_redvpn'
 
 Query="SELECT user_name FROM users WHERE user_name='$username' AND user_encryptedPass=md5('$password') AND is_freeze='0' AND user_duration > 0"
 user_name=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
